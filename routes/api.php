@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Spatie\WebhookClient\Http\Controllers\WebhookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::webhooks('dropbox/webhook');
+Route::webhooks('dropbox/webhook', 'dropbox');
+Route::get('dropbox/webhook', WebhookController::class)
+    ->name("webhook-client-validate-dropbox");
