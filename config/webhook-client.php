@@ -107,9 +107,7 @@ return [
              *
              * To store all headers, set this value to `*`.
              */
-            'store_headers' => [
-
-            ],
+            'store_headers' => '*',
 
             /*
              * The class name of the job that will process the webhook request.
