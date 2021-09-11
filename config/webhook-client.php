@@ -25,7 +25,7 @@ return [
              *
              * It should implement \Spatie\WebhookClient\SignatureValidator\SignatureValidator
              */
-            'signature_validator' => \App\Http\Webhooks\DropboxWebhookSignatureValidator::class,
+            'signature_validator' => \App\Http\Webhooks\DropboxAuthWebhookSignatureValidator::class,
 
             /*
              * This class determines if the webhook call should be stored and processed.
