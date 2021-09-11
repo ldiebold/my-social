@@ -12,7 +12,7 @@ class DropboxWebhookSignatureValidatorResponse implements RespondsToWebhook
     public function respondToValidWebhook(Request $request, WebhookConfig $config): Response
     {
         $response = response($request->challenge);
-        $response->headers([
+        $response->withHeaders([
           'Content-Type' => 'text/plain',
           'X-Content-Type-Options' => 'nosniff'
         ]);
