@@ -25,6 +25,12 @@ class CreatePublishPodcastOrchestratorsTable extends Migration
 
             $table->boolean('raw_audio_file_is_stored')->default('false');
             $table->boolean('audio_cleaned')->default('false');
+            $table->boolean('published_on_podcast_platform')->default('false');
+            $table->boolean('has_branded_link')->default('false');
+            $table->boolean('has_cover_image')->default('false');
+            $table->boolean('has_podcast_video')->default('false');
+            $table->boolean('published_on_video_platform')->default('false');
+            $table->boolean('social_posts_scheduled')->default('false');
         });
     }
 

@@ -2,10 +2,19 @@
 
 namespace App\Models;
 
-use Bus;
+use App\Jobs\CleanPodcastAudioJob;
+use App\Jobs\CreateBrandedLinkJob;
+use App\Jobs\CreatePodcastVideoJob;
+use App\Jobs\DownloadAndStoreAudioFileJob;
+use App\Jobs\GenerateCoverImageJob;
+use App\Jobs\PublishEpisodeToPodcastPlatformJob;
+use App\Jobs\PublishEpisodeToVideoPlatformJob;
+use App\Jobs\SchedulePodcastsSocialPostsJob;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Bus\PendingDispatch;
 use Illuminate\Support\Collection;
+use Bus;
 
 class PublishPodcastOrchestrator extends Model
 {
@@ -13,19 +22,21 @@ class PublishPodcastOrchestrator extends Model
     protected $guarded = [];
 
     public static $jobPipeline = [
-        \App\Jobs\DownloadAndStoreAudioFileJob::class => [
-            'complete_if' => 'raw_audio_file_is_stored'
-        ],
-        \App\Jobs\CleanPodcastAudioJob::class => [
-            'complete_if' => 'audio_cleaned'
-        ]
+        DownloadAndStoreAudioFileJob::class => 'raw_audio_file_is_stored',
+        CleanPodcastAudioJob::class => 'audio_cleaned',
+        PublishEpisodeToPodcastPlatformJob::class => 'published_on_podcast_platform',
+        CreateBrandedLinkJob::class => 'has_branded_link',
+        GenerateCoverImageJob::class => 'has_cover_image',
+        CreatePodcastVideoJob::class => 'has_podcast_video',
+        PublishEpisodeToVideoPlatformJob::class => 'published_on_video_platform',
+        SchedulePodcastsSocialPostsJob::class => 'social_posts_scheduled',
     ];
 
     public function getCompleteJobsAttribute()
     {
         return collect(static::$jobPipeline)
-            ->filter(function ($job) {
-                return $this[$job['complete_if']];
+            ->filter(function ($isComplete) {
+                return $this[$isComplete];
             });
     }
 
@@ -38,25 +49,34 @@ class PublishPodcastOrchestrator extends Model
     public function getIncompleteJobsAttribute()
     {
         return Collection::make(static::$jobPipeline)
-            ->filter(function ($job) {
-                return !$this[$job['complete_if']];
+            ->filter(function ($isComplete) {
+                return !$this[$isComplete];
             });
     }
 
     /**
      * Run all incomplete jobs for publishing a podcast
      *
-     * @return \Illuminate\Foundation\Bus\PendingDispatch
+     * @return false|PendingDispatch
      */
     public function publishPodcast()
     {
-        $bus = Bus::chain(
-            $this->incomplete_jobs->map(fn ($value, $job) => (new $job($this)))
-        );
+        $jobs = $this->incomplete_jobs->map(fn ($value, $job) => (new $job($this)));
+        if ($jobs->isEmpty()) {
+            return false;
+        }
 
-        $bus->dispatch();
+        $bus = Bus::chain($jobs);
+
+        return $bus->dispatch();
     }
 
+    /**
+     * A PublishPodcastOrchestrator belongs to an
+     * ExternalPodcastFolder
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function external_podcast_folder()
     {
         return $this->belongsTo(\App\Models\ExternalPodcastFolder::class);

@@ -23,6 +23,8 @@ class CleanPodcastAudioJob implements ShouldQueue
     public string $podcastOutputPath;
 
     public string $script;
+    public array $commandOutput;
+    public int $commandResultCode;
 
     public string $hardLimiter;
     public string $secondsOfSilenceAtEnd;
@@ -30,7 +32,7 @@ class CleanPodcastAudioJob implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @return void
+     * @return self
      */
     public function __construct(PublishPodcastOrchestrator $orchestrator)
     {
@@ -40,31 +42,19 @@ class CleanPodcastAudioJob implements ShouldQueue
     public function setup()
     {
         $this->script = base_path('scripts/cleanPodcast.sh');
+        $this->commandOutput = [];
+        $this->commandResultCode = 0;
 
         $this->podcastEpisode = $this->orchestrator->podcast_episode;
         $this->podcastEpisodeNumer = $this->podcastEpisode->episode_number;
-        $this->localProjectPath = $this->podcastEpisode->raw_audio_file_path;
 
         $this->hardLimiter = '-2';
         $this->secondsOfSilenceAtEnd = '4';
 
         $this->podcastAudioPath = storage_path("app/podcasts/$this->podcastEpisodeNumer/raw.wav");
-        $this->podcastOutputPath = storage_path("app/podcasts/$this->podcastEpisodeNumer/clean.wav");
-    }
+        $this->podcastOutputPath = storage_path("app/podcasts/$this->podcastEpisodeNumer/clean.mp3");
 
-    /**
-     * Using a shell, run the sox script to clean
-     * the raw audio file
-     *
-     * @return string|false|null
-     */
-    public function runCleanAudioScript()
-    {
-        $command = "cd scripts && ";
-        $command += "$this->script $this->podcastAudioPath $this->podcastOutputPath ";
-        $command += "$this->hardLimiter $this->secondsOfSilenceAtEnd";
-
-        return shell_exec($command);
+        return $this;
     }
 
     /**
@@ -74,8 +64,76 @@ class CleanPodcastAudioJob implements ShouldQueue
      */
     public function handle()
     {
-        $this->setup();
+        $this->setup()
+            ->runCleanAudioScript()
+            ->updateEpisodeCleanedAudioPath()
+            ->updateOrchestrator();
+    }
 
-        $result = $this->runCleanAudioScript();
+    /**
+     * Log Results, indicating if the script failed
+     *
+     * @param string|false $result
+     * @return void
+     */
+    public function logResult(string|false $result)
+    {
+        if ($result !== null) {
+            Log::info('Audio cleaned: ');
+            Log::info(collect($this->commandOutput)->join("\n"));
+        } else {
+            Log::error('Clean audio script failed: ');
+            Log::info(collect($this->commandOutput)->join("\n"));
+        }
+    }
+
+    /**
+     * Using a shell, run the sox script to clean
+     * the raw audio file
+     *
+     * @return self
+     */
+    public function runCleanAudioScript()
+    {
+        $command = "cd scripts && ";
+        $command .= "$this->script $this->podcastAudioPath $this->podcastOutputPath ";
+        $command .= "$this->hardLimiter $this->secondsOfSilenceAtEnd";
+
+        $result = exec($command, $this->commandOutput, $this->commandResultCode);
+
+        $this->logResult($result);
+
+        return $this;
+    }
+
+    /**
+     * Now that we have a cleaned version of the audio file,
+     * we can update the clean_audio_file_path on
+     * the episodes model
+     *
+     * @return self
+     */
+    public function updateEpisodeCleanedAudioPath()
+    {
+        $this->orchestrator->podcast_episode->update([
+            'clean_audio_file_path' => "$this->podcastEpisodeNumer/clean.mp3"
+        ]);
+
+        return $this;
+    }
+
+    /**
+     * When the audio has been successfully cleaned, we let
+     * the orchestrator know
+     *
+     * @return self
+     */
+    public function updateOrchestrator()
+    {
+        $this->orchestrator->update([
+            'audio_cleaned' => true
+        ]);
+
+        return $this;
     }
 }

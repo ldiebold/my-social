@@ -34,7 +34,7 @@ return [
     |
     */
 
-    'include_fluent' => false,
+    'include_fluent' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'write_eloquent_model_mixins' => false,
+    'write_eloquent_model_mixins' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -108,7 +108,7 @@ return [
     |
     */
 
-    'include_helpers' => false,
+    'include_helpers' => true,
 
     'helper_files' => [
         base_path() . '/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
@@ -140,9 +140,7 @@ return [
     |
     */
 
-    'ignored_models' => [
-
-    ],
+    'ignored_models' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -185,9 +183,7 @@ return [
     |
     */
 
-    'interfaces' => [
-
-    ],
+    'interfaces' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -215,9 +211,7 @@ return [
     |  ),
     |
     */
-    'custom_db_types' => [
-
-    ],
+    'custom_db_types' => [],
 
     /*
      |--------------------------------------------------------------------------
@@ -267,7 +261,7 @@ return [
     | magic methods and properties.
     |
     */
-    'include_class_docblocks' => false,
+    'include_class_docblocks' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -302,7 +296,7 @@ return [
     |
     */
     'post_migrate' => [
-        // 'ide-helper:models --nowrite',
+        'ide-helper:models --nowrite',
     ],
 
 ];
