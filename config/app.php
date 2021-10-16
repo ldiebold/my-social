@@ -180,6 +180,9 @@ return [
         App\Providers\GoogleServiceProvider::class,
         App\Providers\YouTubeServiceProvider::class,
         App\Providers\RedditServiceProvider::class,
+        App\Providers\FacebookPageServiceProvider::class,
+        App\Providers\LinkedInServiceProvider::class,
+        App\Providers\TwitterServiceProvider::class,
 
         App\Providers\MorphMapsServiceProvider::class,
 

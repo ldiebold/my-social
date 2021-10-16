@@ -1,0 +1,215 @@
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+[2021-10-16 01:26:15][a3d288d8-7686-438f-ba38-9e2603d4688f] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:26:15][a3d288d8-7686-438f-ba38-9e2603d4688f] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:26:58][2014a236-4006-40a3-98ce-3daf4e9b879f] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:26:58][2014a236-4006-40a3-98ce-3daf4e9b879f] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:28:13][3787894e-93bd-42bf-8358-cdb0822ba94f] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:28:13][3787894e-93bd-42bf-8358-cdb0822ba94f] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:29:13][24fd90e0-e037-407b-a3a3-11ad15296e9c] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:29:13][24fd90e0-e037-407b-a3a3-11ad15296e9c] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:31:34][83af32ec-da89-4832-9ba6-36c0d47a0453] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:31:34][83af32ec-da89-4832-9ba6-36c0d47a0453] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:34:29][aa52d6d4-2dc0-46b2-ab95-79efbdd0bd75] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:34:29][aa52d6d4-2dc0-46b2-ab95-79efbdd0bd75] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:34:41][7a594a12-60a9-4ef6-9b1b-343475973b3e] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:34:41][7a594a12-60a9-4ef6-9b1b-343475973b3e] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:36:30][3c63d945-e152-4b37-a2fc-69448515848b] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:36:30][3c63d945-e152-4b37-a2fc-69448515848b] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:37:16][71c626c9-fba5-4953-bf49-5806bc9c21d6] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:37:16][71c626c9-fba5-4953-bf49-5806bc9c21d6] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:39:55][4cc6de53-2adb-4615-bc6d-c2917186d127] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:39:55][4cc6de53-2adb-4615-bc6d-c2917186d127] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:40:59][51e9f9ed-aab5-4f78-bd81-6db1a0a09a10] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:40:59][51e9f9ed-aab5-4f78-bd81-6db1a0a09a10] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:42:11][ee50040a-4b5b-434b-b12a-bc97a422daa4] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:42:11][ee50040a-4b5b-434b-b12a-bc97a422daa4] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:42:38][d8fd685a-888d-45a2-a13e-7601761d2c78] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:42:38][d8fd685a-888d-45a2-a13e-7601761d2c78] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
+
+   Error 
+
+  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
+
+  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
+     88▕             })
+     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
+     90▕                 $property->setAccessible(true);
+     91▕ 
+  ➜  92▕                 return [$property->name => $property->getValue($job)];
+     93▕             })
+     94▕             ->toArray();
+     95▕     }
+     96▕
+
+      [2m+55 vendor frames [22m
+  56  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+[2021-10-16 01:44:18][921a89d4-5032-487c-b5b7-a37efda8ec43] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
+[2021-10-16 01:44:18][921a89d4-5032-487c-b5b7-a37efda8ec43] Processed:  App\Jobs\SchedulePodcastsSocialPostsJob

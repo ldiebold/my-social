@@ -13,8 +13,11 @@ use App\Jobs\SchedulePodcastsSocialPostsJob;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Bus\PendingDispatch;
+use Illuminate\Foundation\Bus\PendingChain;
 use Illuminate\Support\Collection;
 use Bus;
+
+
 
 class PublishPodcastOrchestrator extends Model
 {
@@ -68,7 +71,24 @@ class PublishPodcastOrchestrator extends Model
 
         $bus = Bus::chain($jobs);
 
-        return $bus->dispatch();
+        return $this->makePublishPodcastJob()->dispatch();
+    }
+
+    /**
+     * Create publish podcast job chain
+     *
+     * @return false|PendingChain
+     */
+    public function makePublishPodcastJobChain()
+    {
+        $jobs = $this->incomplete_jobs->map(fn ($value, $job) => (new $job($this)));
+        if ($jobs->isEmpty()) {
+            return false;
+        }
+
+        $bus = Bus::chain($jobs);
+
+        return $bus;
     }
 
     /**

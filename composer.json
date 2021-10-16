@@ -9,18 +9,25 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "abraham/twitteroauth": "^3.1",
         "benjamincrozat/laravel-dropbox-driver": "^3.0",
+        "dg/twitter-php": "^4.1",
         "fruitcake/laravel-cors": "^2.0",
         "google/apiclient": "^2.10",
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/image": "^2.6",
         "laravel/framework": "^8.54",
         "laravel/horizon": "^5.7",
+        "laravel/octane": "^1.0",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "league/oauth1-client": "^1.10",
+        "league/oauth2-facebook": "^2.0",
         "spatie/browsershot": "^3.50",
         "spatie/laravel-ray": "^1.25",
-        "spatie/laravel-webhook-client": "^3.0"
+        "spatie/laravel-webhook-client": "^3.0",
+        "guzzlehttp/oauth-subscriber": "^0.5"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.10",

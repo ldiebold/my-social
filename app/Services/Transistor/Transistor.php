@@ -168,7 +168,6 @@ class Transistor
         array $episodeData = []
     ): Response {
         $authorizeUploadResponse = $this->authorizeUpload($filename)->throw();
-        ray($authorizeUploadResponse->collect());
 
         [
             'audio_url' => $audioUrl,
@@ -176,20 +175,14 @@ class Transistor
             'content_type' => $contentType
         ] = $authorizeUploadResponse->collect()['data']['attributes'];
 
-        ray('upload url', $uploadUrl);
-
-        $uploadAudioRequest = $this->uploadAudio($file, $filename, $contentType, $uploadUrl)
+        $this->uploadAudio($file, $filename, $contentType, $uploadUrl)
             ->throw();
-
-        ray($uploadAudioRequest->collect(), $uploadAudioRequest->status());
 
         $response = $this->post('episodes', array_merge([
             'episode[show_id]' => $showId,
             'episode[audio_url]' => $audioUrl,
             'episode[title]' => $episodeTitle
         ], $episodeData));
-
-        ray($response->collect());
 
         return $response;
     }
@@ -220,5 +213,47 @@ class Transistor
         $latestEpisode = $latestEpisodes[$latestEpisodeWithPublishDateKey];
 
         return Carbon::make($latestEpisode['attributes']['published_at']);
+    }
+
+    public function episodeHasBeenPublished(int $episodeNumber, string $showId)
+    {
+        $latestEpisodes = $this->get('episodes')
+            ->collect()
+            ->get('data');
+
+        $latestEpisodeWithPublishDateKey = collect($latestEpisodes)
+            ->search(function ($value) use ($showId) {
+                return $value['attributes']['published_at'] &&
+                    $value['relationships']['show']['data']['id'] === $showId;
+            });
+
+        if ($latestEpisodeWithPublishDateKey === false) {
+            throw new NotFoundHttpException('Unable to find latest episode. Make sure there is a recent episode with a publish date');
+        }
+
+        $latestEpisode = $latestEpisodes[$latestEpisodeWithPublishDateKey];
+
+        return $episodeNumber <= $latestEpisode['attributes']['number'];
+    }
+
+    public function latestEpisodeNumber(string $showId)
+    {
+        $latestEpisodes = $this->get('episodes')
+            ->collect()
+            ->get('data');
+
+        $latestEpisodeWithPublishDateKey = collect($latestEpisodes)
+            ->search(function ($value) use ($showId) {
+                return $value['attributes']['published_at'] &&
+                    $value['relationships']['show']['data']['id'] === $showId;
+            });
+
+        if ($latestEpisodeWithPublishDateKey === false) {
+            throw new NotFoundHttpException('Unable to find latest episode. Make sure there is a recent episode with a publish date');
+        }
+
+        $latestEpisode = $latestEpisodes[$latestEpisodeWithPublishDateKey];
+
+        return $latestEpisode['attributes']['number'];
     }
 }

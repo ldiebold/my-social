@@ -49,9 +49,9 @@ RUN apt-get install -y ffmpeg;
 # Sox Support MP3
 RUN apt-get install -y libsox-fmt-all;
 
-# RUN apt-get -y autoremove \
-#     && apt-get clean \
-#     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get -y autoremove \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.0
 

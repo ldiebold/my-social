@@ -88,8 +88,13 @@ class PublishEpisodeToPodcastPlatformJob implements ShouldQueue
         $latestKnownPublishDate = $this->transistor
             ->getLatestKnownEpisodeDate(env('PODCAST_SHOW_ID'));
 
-        $this->publishDate = $latestKnownPublishDate
-            ->addDays(env('DAYS_BETWEEN_EPISODES'));
+        if ($latestKnownPublishDate->isPast()) {
+            return $this->publishDate = Carbon::now()
+                ->addDays(1);
+        } else {
+            $this->publishDate = $latestKnownPublishDate
+                ->addDays(env('DAYS_BETWEEN_EPISODES'));
+        }
 
         return $this;
     }
@@ -109,8 +114,6 @@ class PublishEpisodeToPodcastPlatformJob implements ShouldQueue
             ]
         );
 
-        ray($response->collect());
-
         $this->podcastEpisode->update([
             'provider_id' => $response->collect()['data']['id'],
             'publish_date' => $this->publishDate->toDateTimeString(),
@@ -123,8 +126,6 @@ class PublishEpisodeToPodcastPlatformJob implements ShouldQueue
             'episode[status]' => 'scheduled',
             'episode[published_at]' => $this->publishDate->toDateTimeString()
         ])->throw();
-
-        ray($publishResponse->collect());
 
         return $this;
     }

@@ -8,6 +8,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
 use \Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
+use Illuminate\Support\Collection;
 use Str;
 
 class Reddit
@@ -16,7 +17,7 @@ class Reddit
     public const OAUTH_URL = 'https://oauth.reddit.com/api/';
 
     private string $clientId;
-    private string $clientSecret;
+    protected string $clientSecret;
     public string $redirectUri;
 
     public RedditAccessToken $token;
@@ -33,28 +34,31 @@ class Reddit
      *
      * @return \Illuminate\Http\Client\PendingRequest
      */
-    public function http(): PendingRequest
+    public function http($baseUrl = self::OAUTH_URL): PendingRequest
     {
-        if ($this->token) {
+        $http = Http::baseUrl($baseUrl);
+
+        if (isset($this->token)) {
             $this->ensureTokenFresh($this->token);
+            return $http->withHeaders([
+                'Authorization' => "bearer " . $this->token->access_token
+            ]);
+        } else {
+            return $http;
         }
-
-        ray("bearer " . $this->token->access_token);
-
-        return Http::withHeaders([
-            'Authorization' => "bearer " . $this->token->access_token
-        ]);
     }
 
     public function retrieveAccessToken(string $code)
     {
         $endpoint = static::AUTH_URL . 'access_token';
 
-        return Http::post($endpoint, [
-            'grant_type' => 'authorization_code',
-            'code' => $code,
-            'redirect_uri' => $this->redirectUri
-        ])->throw();
+        return Http::withBasicAuth($this->clientId, $this->clientSecret)
+            ->asForm()
+            ->post($endpoint, [
+                'grant_type' => 'authorization_code',
+                'code' => $code,
+                'redirect_uri' => $this->redirectUri
+            ])->throw();
     }
 
     /**
@@ -77,10 +81,8 @@ class Reddit
      */
     public function get(string $endpoint, array $params = []): Response
     {
-        return $this->http()->get(
-            $this::OAUTH_URL . $endpoint,
-            $params
-        );
+        return $this->http()
+            ->get($endpoint, $params);
     }
 
     public function setToken(RedditAccessToken $token)
@@ -89,28 +91,46 @@ class Reddit
     }
 
     /**
+     * Make an endpoint (base_url not included) this is mostly
+     * to make it easy to add an array of query params
+     *
+     * @param string $endpoint
+     * @param array $queryParams
+     * @return string
+     */
+    public function makeEndpoint(string $endpoint, array $queryParams = []): string
+    {
+        $query = count($queryParams) ? ('?' . Arr::query($queryParams)) : '';
+        return $endpoint . $query;
+    }
+
+    /**
      * Execute a POST request
      *
      * @param string $endpoint
      * @param array $queryParams
      * @param array $data
-     * @return Response
+     * @return Collection
      */
     public function post(
         string $endpoint,
         array $data = [],
         array $queryParams = [],
-    ): Response {
-        $query = count($queryParams) ? ('?' . Arr::query($queryParams)) : '';
+        array $attachments = []
+    ): Collection {
+        $http = $this->http();
 
-        ray($this->makeUrl($endpoint) . $query);
+        collect($attachments)->each(function ($attachment) use (&$http) {
+            $http->attach($attachment[0], $attachment[1], $attachment[2]);
+        });
 
         return $this->http()
             ->asForm()
             ->post(
-                $this->makeUrl($endpoint) . $query,
+                $this->makeEndpoint($endpoint, $queryParams),
                 $data
-            );
+            )->throw()
+            ->collect();
     }
 
     /**
@@ -128,7 +148,7 @@ class Reddit
     ): Response {
         return $this->http()
             ->patch(
-                $this->makeUrl($endpoint) . '?' . Arr::query($queryParams),
+                $this->makeEndpoint($endpoint, $queryParams),
                 $data
             );
     }
@@ -148,12 +168,12 @@ class Reddit
     ): Response {
         return $this->http()
             ->put(
-                $this->makeUrl($endpoint) . '?' . Arr::query($queryParams),
+                $this->makeEndpoint($endpoint, $queryParams),
                 $data
             );
     }
 
-    public function getAuthorizeUrl()
+    public function getAuthorizeUrl(array $scope = [])
     {
         return (string) Str::of(static::AUTH_URL)
             ->append('authorize?')
@@ -163,7 +183,7 @@ class Reddit
                 'response_type' => 'code',
                 'redirect_uri' => $this->redirectUri,
                 'duration' => 'permanent',
-                'scope' => 'submit save read mysubreddits modposts edit identity'
+                'scope' => implode(' ', $scope),
             ]));
     }
 
@@ -196,5 +216,84 @@ class Reddit
         ]);
 
         return $this->token;
+    }
+
+    public function usingDefaultAccount(): self
+    {
+        $this->setToken(RedditAccessToken::first());
+
+        return $this;
+    }
+
+    public function publishTextPost(string $sr, string $title, string $body)
+    {
+        return $this->usingDefaultAccount()->post(
+            'submit',
+            [
+                'sr' => $sr,
+                'title' => $title,
+                'text' => $body,
+                'kind' => 'self'
+            ]
+        );
+    }
+
+    public function publishLinkPost(
+        string $sr,
+        string $link,
+        string $title,
+        string $body
+    ): Collection {
+        return $this->usingDefaultAccount()->post(
+            'submit',
+            [
+                'sr' => $sr,
+                'title' => $title,
+                'text' => $body,
+                'kind' => 'link',
+                'url' => $link
+            ]
+        );
+    }
+
+    public function publishImagePost(
+        string $sr,
+        string $imageUrl,
+        string $title,
+        string $body
+    ) {
+        return $this->usingDefaultAccount()
+            ->post(
+                'submit',
+                [
+                    'sr' => $sr,
+                    'title' => $title,
+                    'text' => $body,
+                    'kind' => 'image',
+                    'url' => $imageUrl
+                ],
+                []
+            );
+    }
+
+    public function publishVideoPost(
+        string $sr,
+        string $videoUrl,
+        string $title,
+        string $body
+    ) {
+        return $this->usingDefaultAccount()
+            ->post(
+                'submit',
+                [
+                    'sr' => $sr,
+                    'title' => $title,
+                    'text' => $body,
+                    'kind' => 'video',
+                    'video_url' => $videoUrl,
+                    'url' => $videoUrl
+                ],
+                []
+            );
     }
 }

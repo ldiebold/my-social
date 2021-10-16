@@ -31,6 +31,78 @@ namespace App\Models{
 
 namespace App\Models{
 /**
+ * App\Models\FacebookAccessToken
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $access_token
+ * @property int|null $expires
+ * @property string|null $refresh_token
+ * @property string $token_type
+ * @property-read mixed $expires_in
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken query()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereAccessToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereExpires($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereRefreshToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereTokenType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookAccessToken whereUpdatedAt($value)
+ */
+	class FacebookAccessToken extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\FacebookGroup
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $access_token
+ * @property string $facebook_id
+ * @property string $name
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup query()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup whereAccessToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup whereFacebookId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookGroup whereUpdatedAt($value)
+ */
+	class FacebookGroup extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\FacebookPage
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $access_token
+ * @property string $facebook_id
+ * @property string $name
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage query()
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage whereAccessToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage whereFacebookId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FacebookPage whereUpdatedAt($value)
+ */
+	class FacebookPage extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
  * App\Models\GoogleAccessToken
  *
  * @property int $id
@@ -55,6 +127,30 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|GoogleAccessToken whereUpdatedAt($value)
  */
 	class GoogleAccessToken extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\LinkedInAccessToken
+ *
+ * @property string $other
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $access_token
+ * @property int $expires_in
+ * @property int $created
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken query()
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken whereAccessToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken whereCreated($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken whereExpiresIn($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LinkedInAccessToken whereUpdatedAt($value)
+ */
+	class LinkedInAccessToken extends \Eloquent {}
 }
 
 namespace App\Models{
@@ -144,6 +240,34 @@ namespace App\Models{
 
 namespace App\Models{
 /**
+ * App\Models\PublishEvent
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $publish_at
+ * @property int $social_post_template_id
+ * @property int $social_publisher_id
+ * @property int $social_post_id
+ * @property-read \App\Models\SocialPost $social_post
+ * @property-read \App\Models\SocialPostTemplate $social_post_template
+ * @property-read \App\Models\SocialPublisher $social_publisher
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent query()
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent wherePublishAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent whereSocialPostId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent whereSocialPostTemplateId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent whereSocialPublisherId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishEvent whereUpdatedAt($value)
+ */
+	class PublishEvent extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
  * App\Models\PublishPodcastOrchestrator
  *
  * @property int $id
@@ -192,8 +316,13 @@ namespace App\Models{
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property int $days_after_release
  * @property string $release_time
+ * @property int $social_post_template_id
  * @property string $publish_post_event_templateable_type
  * @property int $publish_post_event_templateable_id
+ * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $publish_post_event_templateable
+ * @property-read \App\Models\SocialPostTemplate $social_post_template
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\SocialPublisher[] $social_publishers
+ * @property-read int|null $social_publishers_count
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate query()
@@ -203,9 +332,31 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate wherePublishPostEventTemplateableId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate wherePublishPostEventTemplateableType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate whereReleaseTime($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate whereSocialPostTemplateId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplate whereUpdatedAt($value)
  */
 	class PublishPostEventTemplate extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\PublishPostEventTemplateSocialPublisher
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int $publish_post_event_template_id
+ * @property int $social_publisher_id
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher query()
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher wherePublishPostEventTemplateId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher whereSocialPublisherId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|PublishPostEventTemplateSocialPublisher whereUpdatedAt($value)
+ */
+	class PublishPostEventTemplateSocialPublisher extends \Eloquent {}
 }
 
 namespace App\Models{
@@ -245,6 +396,7 @@ namespace App\Models{
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property \Illuminate\Support\Carbon $publish_at
+ * @property bool $posted
  * @property int $social_post_id
  * @property-read \App\Models\SocialPost $social_post
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost newModelQuery()
@@ -252,6 +404,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost query()
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost wherePosted($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost wherePublishAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost whereSocialPostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|ScheduledSocialPost whereUpdatedAt($value)
@@ -266,18 +419,27 @@ namespace App\Models{
  * @property int $id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string $social_channel
- * @property string $body
+ * @property int $social_publisher_id
+ * @property string|null $title
+ * @property string|null $body
+ * @property string|null $link
  * @property string|null $image_path
+ * @property string|null $image_link
+ * @property string|null $video_path
+ * @property-read \App\Models\SocialPublisher $social_publisher
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost query()
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereBody($value)
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereImageLink($value)
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereImagePath($value)
- * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereSocialChannel($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereLink($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereSocialPublisherId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPost whereVideoPath($value)
  */
 	class SocialPost extends \Eloquent {}
 }
@@ -286,11 +448,75 @@ namespace App\Models{
 /**
  * App\Models\SocialPostTemplate
  *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $title
+ * @property string|null $body
+ * @property string|null $image_path
+ * @property string|null $video_path
+ * @property string|null $image_link
+ * @property string|null $link
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate query()
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereImageLink($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereImagePath($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereLink($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPostTemplate whereVideoPath($value)
  */
 	class SocialPostTemplate extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\SocialPublisher
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $identifier
+ * @property string $title
+ * @property string|null $description
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\PublishPostEventTemplate[] $publish_post_event_templates
+ * @property-read int|null $publish_post_event_templates_count
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher query()
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher whereIdentifier($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|SocialPublisher whereUpdatedAt($value)
+ */
+	class SocialPublisher extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\TwitterTokenCredentials
+ *
+ * @property int $id
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string $identifier
+ * @property string $secret
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials query()
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials whereIdentifier($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials whereSecret($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|TwitterTokenCredentials whereUpdatedAt($value)
+ */
+	class TwitterTokenCredentials extends \Eloquent {}
 }
 
 namespace App\Models{

@@ -11,6 +11,7 @@ use App\Models\SocialPostTemplate;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
@@ -23,6 +24,7 @@ class SchedulePodcastsSocialPostsJob implements ShouldQueue
     public PodcastEpisodeCampaignTemplate $campaignTemplate;
     public PodcastEpisode $podcastEpisode;
     public SocialPostTemplate $socialPostTemplate;
+    public Collection $publishPostEventTemplates;
 
     public int $podcastEpisodeNumber;
 
@@ -41,7 +43,7 @@ class SchedulePodcastsSocialPostsJob implements ShouldQueue
         $this->podcastEpisode = $this->orchestrator->podcast_episode;
         $this->podcastEpisodeNumber = $this->podcastEpisode->episode_number;
         $this->campaignTemplate = PodcastEpisodeCampaignTemplate::first();
-        $this->publishEvents = $this->campaignTemplate->publish_post_event_templates;
+        $this->publishPostEventTemplates = $this->campaignTemplate->publish_post_event_templates;
 
         $this->imagePath = storage_path("app/podcasts/$this->podcastEpisodeNumber/cover-image.png");
 
@@ -62,23 +64,8 @@ class SchedulePodcastsSocialPostsJob implements ShouldQueue
 
     public function schedulePosts()
     {
-        $this->publishEvents->each(function (PublishPostEventTemplate $publishEvent) {
-            $publishEvent->schedulePostFor(
-                [
-                    'twitter',
-                    'youtube-community',
-                    'reddit',
-                    'facebook-group',
-                    'facebook-page',
-                    'linkedin-group',
-                    'linkedin-page'
-                ],
-                $this->podcastEpisode->publish_date,
-                $this->podcastEpisode->social_post_text,
-                $this->podcastEpisode->branded_audio_link_url,
-                $this->podcastEpisode->cover_image_path
-            );
-        });
+        $this->campaignTemplate
+            ->createPostsFor($this->podcastEpisode);
 
         return $this;
     }

@@ -21,6 +21,8 @@ class CreatePublishPostEventTemplatesTable extends Migration
             $table->unsignedInteger('days_after_release');
             $table->time('release_time');
 
+            $table->foreignIdFor(SocialPostTemplate::class)
+                ->constrained();
             $table->morphs('publish_post_event_templateable');
         });
     }

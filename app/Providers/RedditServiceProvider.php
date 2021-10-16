@@ -16,9 +16,9 @@ class RedditServiceProvider extends ServiceProvider
     {
         $this->app->singleton(Reddit::class, function ($app) {
             return new Reddit([
-                'client_id' => env('REDDIT_CLIENT_ID'),
-                'client_secret' => env('REDDIT_CLIENT_SECRET'),
-                'redirect_uri' => env('APP_URL') . '/reddit/callback'
+                'client_id' => config('reddit.providers.default.client_id'),
+                'client_secret' => config('reddit.providers.default.client_secret'),
+                'redirect_uri' => config('reddit.providers.default.redirect_uri')
             ]);
         });
     }

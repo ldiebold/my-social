@@ -23,4 +23,15 @@ class PodcastEpisodeCampaignTemplate extends Model
     {
         return $this->hasMany(ScheduledSocialPost::class);
     }
+
+    public function createPostsFor(PodcastEpisode $podcastEpisode)
+    {
+        return $this->publish_post_event_templates->map(
+            function (
+                PublishPostEventTemplate $eventTemplate
+            ) use ($podcastEpisode) {
+                $eventTemplate->scheduleAllPostsForPodcastEpisode($podcastEpisode);
+            }
+        );
+    }
 }

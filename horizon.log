@@ -1,1797 +1,297 @@
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:20
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:20
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:20
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:20
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+Horizon started successfully.
+Horizon started successfully.
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
+
+   ErrorException 
+
+  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory
+
+  at vendor/google/apiclient/src/Client.php:963
+    959▕       if (!file_exists($config)) {
+    960▕         throw new InvalidArgumentException(sprintf('file "%s" does not exist', $config));
+    961▕       }
+    962▕ 
+  ➜ 963▕       $json = file_get_contents($config);
+    964▕ 
+    965▕       if (!$config = json_decode($json, true)) {
+    966▕         throw new LogicException('invalid json for auth config');
+    967▕       }
+
+      [2m+1 vendor frames [22m
+  2   app/Providers/GoogleServiceProvider.php:21
+      Google\Client::setAuthConfig()
+
+      [2m+7 vendor frames [22m
+  10  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle()
 Horizon started successfully.
 Horizon started successfully.
 Horizon started successfully.
 Horizon started successfully.
-[2021-09-16 23:09:42][342b7ed8-8c2d-47b0-aafd-b0fdbf74502b] Processing: App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-16 23:09:48][342b7ed8-8c2d-47b0-aafd-b0fdbf74502b] Processed:  App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-16 23:09:48][e804624f-2327-4dfb-b8c0-f1271358f90f] Processing: App\Jobs\CleanPodcastAudioJob
-[2021-09-16 23:09:49][e804624f-2327-4dfb-b8c0-f1271358f90f] Processed:  App\Jobs\CleanPodcastAudioJob
-[2021-09-16 23:09:49][5a82e0a3-31e6-4c12-a64e-a251b2e40bad] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-sox WARN dither: dither clipped 17 samples; decrease volume?
-[2021-09-16 23:10:00][5a82e0a3-31e6-4c12-a64e-a251b2e40bad] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:10:00][7a588b1e-245f-40bf-b363-5e3a5e7c9f74] Processing: App\Jobs\CreateBrandedLinkJob
-[2021-09-16 23:10:02][7a588b1e-245f-40bf-b363-5e3a5e7c9f74] Processed:  App\Jobs\CreateBrandedLinkJob
-[2021-09-16 23:10:02][a18a897e-0a53-40a2-844f-fd1ecd032668] Processing: App\Jobs\GenerateCoverImageJob
-[2021-09-16 23:10:04][a18a897e-0a53-40a2-844f-fd1ecd032668] Processed:  App\Jobs\GenerateCoverImageJob
-[2021-09-16 23:10:06][48e170d1-4418-4dee-b620-959e7aa9a189] Processing: App\Jobs\CreatePodcastVideoJob
-ffmpeg version 4.3.2-0+deb11u1ubuntu1 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 10 (Ubuntu 10.2.1-20ubuntu1)
-  configuration: --prefix=/usr --extra-version=0+deb11u1ubuntu1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 51.100 / 56. 51.100
-  libavcodec     58. 91.100 / 58. 91.100
-  libavformat    58. 45.100 / 58. 45.100
-  libavdevice    58. 10.100 / 58. 10.100
-  libavfilter     7. 85.100 /  7. 85.100
-  libavresample   4.  0.  0 /  4.  0.  0
-  libswscale      5.  7.100 /  5.  7.100
-  libswresample   3.  7.100 /  3.  7.100
-  libpostproc    55.  7.100 / 55.  7.100
-Guessed Channel Layout for Input Stream #0.0 : mono
-Input #0, wav, from '/var/www/html/storage/app/podcasts/1/clean.wav':
-  Duration: 00:00:10.05, bitrate: 705 kb/s
-    Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
-Input #1, png_pipe, from '/var/www/html/storage/app/podcasts/1/cover-image.png':
-  Duration: N/A, bitrate: N/A
-    Stream #1:0: Video: png, rgba(pc), 1920x1080, 1 fps, 1 tbr, 1 tbn, 1 tbc
-Stream mapping:
-  Stream #1:0 -> #0:0 (png (native) -> h264 (libx264))
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x55fa66df52c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[libx264 @ 0x55fa66df52c0] profile High 4:4:4 Predictive, level 5.1, 4:4:4, 8-bit
-[libx264 @ 0x55fa66df52c0] 264 - core 160 r3011 cde9a93 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=9 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=0 chroma_qp_offset=0 threads=12 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc=cqp mbtree=0 qp=0
-Output #0, matroska, to '/var/www/html/storage/app/podcasts/1/video.mkv':
-  Metadata:
-    encoder         : Lavf58.45.100
-    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuv444p, 1920x1080, q=-1--1, 1 fps, 1k tbn, 1 tbc
-    Metadata:
-      encoder         : Lavc58.91.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-    Stream #0:1: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s
-frame=   18 fps=0.0 q=0.0 size=       1kB time=00:00:04.00 bitrate=   1.5kbits/s speed=7.98x    [2021-09-16 23:10:08][48e170d1-4418-4dee-b620-959e7aa9a189] Processed:  App\Jobs\CreatePodcastVideoJob
-frame=   25 fps=0.0 q=0.0 Lsize=     943kB time=00:00:11.00 bitrate= 702.0kbits/s speed=11.1x    
-video:75kB audio:865kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.249951%
-[libx264 @ 0x55fa66df52c0] frame I:1     Avg QP: 0.00  size: 75589
-[libx264 @ 0x55fa66df52c0] frame P:24    Avg QP: 0.00  size:    79
-[libx264 @ 0x55fa66df52c0] mb I  I16..4: 81.2%  6.0% 12.8%
-[libx264 @ 0x55fa66df52c0] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x55fa66df52c0] 8x8 transform intra:6.0%
-[libx264 @ 0x55fa66df52c0] coded y,u,v intra: 10.0% 9.7% 9.6% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x55fa66df52c0] i16 v,h,dc,p: 90%  4%  5%  0%
-[libx264 @ 0x55fa66df52c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7%  0% 93%  0%  0%  0%  0%  0%  0%
-[libx264 @ 0x55fa66df52c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 49% 25% 17%  3%  2%  1%  1%  1%  1%
-[libx264 @ 0x55fa66df52c0] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x55fa66df52c0] kb/s:24.80
-Horizon started successfully.
-[2021-09-16 23:15:44][3825cf92-09fa-4404-a2c4-d6d0901c35f8] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:15:56][3825cf92-09fa-4404-a2c4-d6d0901c35f8] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-Horizon started successfully.
-[2021-09-16 23:19:06][bdb05deb-e94e-4882-bdb8-ab8109f859ab] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:19:17][bdb05deb-e94e-4882-bdb8-ab8109f859ab] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-Horizon started successfully.
-[2021-09-16 23:20:51][7f5999c9-2779-44f1-a43a-c16106bc34ce] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:21:02][7f5999c9-2779-44f1-a43a-c16106bc34ce] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-Horizon started successfully.
-[2021-09-16 23:24:45][9a1f8c2e-d970-4ac2-8dd2-63bc44be85fd] Processing: App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-16 23:24:49][9a1f8c2e-d970-4ac2-8dd2-63bc44be85fd] Processed:  App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-16 23:24:51][a49e2131-379d-4edb-975d-f0ed10d84cba] Processing: App\Jobs\CleanPodcastAudioJob
-[2021-09-16 23:24:51][a49e2131-379d-4edb-975d-f0ed10d84cba] Processed:  App\Jobs\CleanPodcastAudioJob
-[2021-09-16 23:24:51][603d6bd8-5829-4fde-bd3a-9ee797ae1b4d] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-sox WARN dither: dither clipped 16 samples; decrease volume?
-[2021-09-16 23:24:57][603d6bd8-5829-4fde-bd3a-9ee797ae1b4d] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:25:00][97a351ac-6863-47ff-a6e8-0f87c3012a88] Processing: App\Jobs\CreateBrandedLinkJob
-[2021-09-16 23:25:01][97a351ac-6863-47ff-a6e8-0f87c3012a88] Failed:     App\Jobs\CreateBrandedLinkJob
-
-   Error 
-
-  Typed property App\Jobs\CreateBrandedLinkJob::$rebrandly must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
 Horizon started successfully.
 Horizon started successfully.
-[2021-09-16 23:59:10][22cd8904-65c7-4d86-be60-d70a5ab42c2c] Processing: App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-16 23:59:13][22cd8904-65c7-4d86-be60-d70a5ab42c2c] Processed:  App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-16 23:59:13][708e7885-e04f-4857-8062-be971c6b0f9e] Processing: App\Jobs\CleanPodcastAudioJob
-sox WARN dither: dither clipped 16 samples; decrease volume?
-[2021-09-16 23:59:14][708e7885-e04f-4857-8062-be971c6b0f9e] Processed:  App\Jobs\CleanPodcastAudioJob
-[2021-09-16 23:59:14][bc659e93-ea1a-471f-a308-1fd804d08750] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:59:19][bc659e93-ea1a-471f-a308-1fd804d08750] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-16 23:59:19][f662967a-f512-4d6f-a243-009d89ecdc33] Processing: App\Jobs\CreateBrandedLinkJob
-[2021-09-16 23:59:20][f662967a-f512-4d6f-a243-009d89ecdc33] Processed:  App\Jobs\CreateBrandedLinkJob
-[2021-09-16 23:59:20][c28932b4-9e89-4e50-832c-a383596ebcac] Processing: App\Jobs\GenerateCoverImageJob
-[2021-09-16 23:59:22][c28932b4-9e89-4e50-832c-a383596ebcac] Processed:  App\Jobs\GenerateCoverImageJob
-[2021-09-16 23:59:22][5a84812b-c542-4916-8ede-6d182576d53e] Processing: App\Jobs\CreatePodcastVideoJob
-ffmpeg version 4.3.2-0+deb11u1ubuntu1 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 10 (Ubuntu 10.2.1-20ubuntu1)
-  configuration: --prefix=/usr --extra-version=0+deb11u1ubuntu1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 51.100 / 56. 51.100
-  libavcodec     58. 91.100 / 58. 91.100
-  libavformat    58. 45.100 / 58. 45.100
-  libavdevice    58. 10.100 / 58. 10.100
-  libavfilter     7. 85.100 /  7. 85.100
-  libavresample   4.  0.  0 /  4.  0.  0
-  libswscale      5.  7.100 /  5.  7.100
-  libswresample   3.  7.100 /  3.  7.100
-  libpostproc    55.  7.100 / 55.  7.100
-[mp3 @ 0x55c697556640] Estimating duration from bitrate, this may be inaccurate
-Input #0, mp3, from '/var/www/html/storage/app/podcasts/1/clean.mp3':
-  Duration: 00:00:10.08, start: 0.000000, bitrate: 64 kb/s
-    Stream #0:0: Audio: mp3, 44100 Hz, mono, fltp, 64 kb/s
-Input #1, png_pipe, from '/var/www/html/storage/app/podcasts/1/cover-image.png':
-  Duration: N/A, bitrate: N/A
-    Stream #1:0: Video: png, rgba(pc), 1920x1080, 1 fps, 1 tbr, 1 tbn, 1 tbc
-Stream mapping:
-  Stream #1:0 -> #0:0 (png (native) -> h264 (libx264))
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x55c697579600] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[libx264 @ 0x55c697579600] profile High 4:4:4 Predictive, level 5.1, 4:4:4, 8-bit
-[libx264 @ 0x55c697579600] 264 - core 160 r3011 cde9a93 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=9 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=0 chroma_qp_offset=0 threads=12 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc=cqp mbtree=0 qp=0
-Output #0, matroska, to '/var/www/html/storage/app/podcasts/1/video.mkv':
-  Metadata:
-    encoder         : Lavf58.45.100
-    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuv444p, 1920x1080, q=-1--1, 1 fps, 1k tbn, 1 tbc
-    Metadata:
-      encoder         : Lavc58.91.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 44100 Hz, mono, fltp, 64 kb/s
-[2021-09-16 23:59:23][5a84812b-c542-4916-8ede-6d182576d53e] Processed:  App\Jobs\CreatePodcastVideoJob
-frame=   18 fps=0.0 q=0.0 size=       1kB time=00:00:04.00 bitrate=   1.5kbits/s speed=7.89x    frame=   25 fps= 24 q=0.0 Lsize=     157kB time=00:00:11.00 bitrate= 117.2kbits/s speed=10.7x    
-video:75kB audio:79kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.274962%
-[libx264 @ 0x55c697579600] frame I:1     Avg QP: 0.00  size: 75589
-[libx264 @ 0x55c697579600] frame P:24    Avg QP: 0.00  size:    79
-[libx264 @ 0x55c697579600] mb I  I16..4: 81.2%  6.0% 12.8%
-[libx264 @ 0x55c697579600] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x55c697579600] 8x8 transform intra:6.0%
-[libx264 @ 0x55c697579600] coded y,u,v intra: 10.0% 9.7% 9.6% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x55c697579600] i16 v,h,dc,p: 90%  4%  5%  0%
-[libx264 @ 0x55c697579600] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7%  0% 93%  0%  0%  0%  0%  0%  0%
-[libx264 @ 0x55c697579600] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 49% 25% 17%  3%  2%  1%  1%  1%  1%
-[libx264 @ 0x55c697579600] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x55c697579600] kb/s:24.80
 Horizon started successfully.
-
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-
-[2021-09-19 09:08:34][eb00a135-8ebb-44c0-90c6-b70b8569ee3d] Processing: App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-19 09:08:39][eb00a135-8ebb-44c0-90c6-b70b8569ee3d] Processed:  App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-19 09:08:39][0ab6b5a7-fc6f-4db6-a316-8c290932ee7d] Processing: App\Jobs\CleanPodcastAudioJob
-[2021-09-19 09:08:39][0ab6b5a7-fc6f-4db6-a316-8c290932ee7d] Processed:  App\Jobs\CleanPodcastAudioJob
-[2021-09-19 09:08:39][ffcba056-6649-42e3-9b5b-9a5e1eb261f3] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-sox WARN dither: dither clipped 16 samples; decrease volume?
-[2021-09-19 09:08:46][ffcba056-6649-42e3-9b5b-9a5e1eb261f3] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-19 09:08:46][17670f36-783e-4d9b-9af4-64bfc2e62afb] Processing: App\Jobs\CreateBrandedLinkJob
-[2021-09-19 09:08:47][17670f36-783e-4d9b-9af4-64bfc2e62afb] Processed:  App\Jobs\CreateBrandedLinkJob
-[2021-09-19 09:08:47][d36ad4de-b8de-4d3c-927b-2daa888e7676] Processing: App\Jobs\GenerateCoverImageJob
-[2021-09-19 09:08:50][d36ad4de-b8de-4d3c-927b-2daa888e7676] Processed:  App\Jobs\GenerateCoverImageJob
-[2021-09-19 09:08:50][b2c49a80-a758-45ae-abfd-c7c26aa607c8] Processing: App\Jobs\CreatePodcastVideoJob
-ffmpeg version 4.3.2-0+deb11u1ubuntu1 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 10 (Ubuntu 10.2.1-20ubuntu1)
-  configuration: --prefix=/usr --extra-version=0+deb11u1ubuntu1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 51.100 / 56. 51.100
-  libavcodec     58. 91.100 / 58. 91.100
-  libavformat    58. 45.100 / 58. 45.100
-  libavdevice    58. 10.100 / 58. 10.100
-  libavfilter     7. 85.100 /  7. 85.100
-  libavresample   4.  0.  0 /  4.  0.  0
-  libswscale      5.  7.100 /  5.  7.100
-  libswresample   3.  7.100 /  3.  7.100
-  libpostproc    55.  7.100 / 55.  7.100
-[mp3 @ 0x562da8c04640] Estimating duration from bitrate, this may be inaccurate
-Input #0, mp3, from '/var/www/html/storage/app/podcasts/1/clean.mp3':
-  Duration: 00:00:10.08, start: 0.000000, bitrate: 64 kb/s
-    Stream #0:0: Audio: mp3, 44100 Hz, mono, fltp, 64 kb/s
-Input #1, png_pipe, from '/var/www/html/storage/app/podcasts/1/cover-image.png':
-  Duration: N/A, bitrate: N/A
-    Stream #1:0: Video: png, rgba(pc), 1920x1080, 1 fps, 1 tbr, 1 tbn, 1 tbc
-Stream mapping:
-  Stream #1:0 -> #0:0 (png (native) -> h264 (libx264))
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x562da8c27600] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[libx264 @ 0x562da8c27600] profile High 4:4:4 Predictive, level 5.1, 4:4:4, 8-bit
-[libx264 @ 0x562da8c27600] 264 - core 160 r3011 cde9a93 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=9 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=0 chroma_qp_offset=0 threads=12 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc=cqp mbtree=0 qp=0
-Output #0, matroska, to '/var/www/html/storage/app/podcasts/1/video.mkv':
-  Metadata:
-    encoder         : Lavf58.45.100
-    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuv444p, 1920x1080, q=-1--1, 1 fps, 1k tbn, 1 tbc
-    Metadata:
-      encoder         : Lavc58.91.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 44100 Hz, mono, fltp, 64 kb/s
-frame=   14 fps=0.0 q=0.0 size=       1kB time=00:00:00.00 bitrate=5856.0kbits/s speed=0.00194x    frame=   25 fps= 22 q=0.0 Lsize=     157kB time=00:00:11.00 bitrate= 117.2kbits/s speed=9.72x    
-video:75kB audio:79kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.274962%
-[libx264 @ 0x562da8c27600] frame I:1     Avg QP: 0.00  size: 75589
-[libx264 @ 0x562da8c27600] frame P:24    Avg QP: 0.00  size:    79
-[libx264 @ 0x562da8c27600] mb I  I16..4: 81.2%  6.0% 12.8%
-[libx264 @ 0x562da8c27600] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x562da8c27600] 8x8 transform intra:6.0%
-[libx264 @ 0x562da8c27600] coded y,u,v intra: 10.0% 9.7% 9.6% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x562da8c27600] i16 v,h,dc,p: 90%  4%  5%  0%
-[libx264 @ 0x562da8c27600] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7%  0% 93%  0%  0%  0%  0%  0%  0%
-[libx264 @ 0x562da8c27600] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 49% 25% 17%  3%  2%  1%  1%  1%  1%
-[libx264 @ 0x562da8c27600] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x562da8c27600] kb/s:24.80
-[2021-09-19 09:08:51][b2c49a80-a758-45ae-abfd-c7c26aa607c8] Processed:  App\Jobs\CreatePodcastVideoJob
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-
 Horizon started successfully.
-
-
-
-[2021-09-21 23:17:30][39f877a8-4a3d-4d9d-98a4-dc8c4b0997f4] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:17:34][39f877a8-4a3d-4d9d-98a4-dc8c4b0997f4] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-[2021-09-21 23:25:26][5c10a04a-2f3b-48ad-b665-7525d4f2be13] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:25:29][5c10a04a-2f3b-48ad-b665-7525d4f2be13] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-[2021-09-21 23:26:03][989dec10-545a-4d2f-8c83-a9927a95833a] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-"/var/www/html/storage/app/podcasts/1/video.mkv"
-
-[2021-09-21 23:27:31][ee1ccb84-a639-4f8b-9c87-c11266859d3b] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-"/var/www/html/storage/app/podcasts/1/video.mkv"
-
-
-[2021-09-21 23:27:34][989dec10-545a-4d2f-8c83-a9927a95833a] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:27:34][989dec10-545a-4d2f-8c83-a9927a95833a] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
 Horizon started successfully.
-
-
-
-[2021-09-21 23:29:03][ee1ccb84-a639-4f8b-9c87-c11266859d3b] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:29:03][ee1ccb84-a639-4f8b-9c87-c11266859d3b] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
 Horizon started successfully.
-
-
-[2021-09-21 23:29:14][60745f91-ed00-4718-a8e2-353f0f8f3a39] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-
-
-[2021-09-21 23:29:17][60745f91-ed00-4718-a8e2-353f0f8f3a39] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-Horizon started successfully.
-
-
-
-
-[2021-09-21 23:34:05][144fe878-9e30-4307-8221-ac87d345509c] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:34:08][144fe878-9e30-4307-8221-ac87d345509c] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-Horizon started successfully.
-
-
-
-[2021-09-21 23:37:38][eeffd5f5-0836-48f5-922f-7f8b68b3265d] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-21 23:37:41][eeffd5f5-0836-48f5-922f-7f8b68b3265d] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-Horizon started successfully.
-
-
-
-[2021-09-21 23:53:06][ea3b045c-1aeb-47df-8e79-1edad67b8278] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:53:06][ea3b045c-1aeb-47df-8e79-1edad67b8278] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-21 23:53:21][09a59e9e-eb1d-4ef4-bc7e-9a0fd6f17368] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:53:21][09a59e9e-eb1d-4ef4-bc7e-9a0fd6f17368] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:53:51][6fd94fa8-4e9b-429f-a2a3-95712e9f206a] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:53:51][6fd94fa8-4e9b-429f-a2a3-95712e9f206a] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:54:39][b00ae410-f2f9-4b05-a71c-a75c01104ba0] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:54:39][b00ae410-f2f9-4b05-a71c-a75c01104ba0] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:55:48][e5ead78f-01e9-4ef8-969d-86aadcef694b] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:55:48][e5ead78f-01e9-4ef8-969d-86aadcef694b] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:56:33][3dd65f46-72b3-451a-bd42-13b933ad3a86] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:56:33][3dd65f46-72b3-451a-bd42-13b933ad3a86] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:57:04][193ff263-b60e-4ba5-a4b8-4b34c8e1d1ed] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:57:04][193ff263-b60e-4ba5-a4b8-4b34c8e1d1ed] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-21 23:57:43][254775ec-9fb8-4dda-a566-f466daac85cf] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:57:43][254775ec-9fb8-4dda-a566-f466daac85cf] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-21 23:57:58][3d8a5e65-a7ae-422a-b3c6-9ad7147b94d4] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:57:58][3d8a5e65-a7ae-422a-b3c6-9ad7147b94d4] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:58:16][fa94bef1-2d7a-45f6-bde1-7561b60f95d9] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:58:16][fa94bef1-2d7a-45f6-bde1-7561b60f95d9] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-21 23:59:10][aa2cf703-cc77-4be6-bd85-d2e95fb9020a] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-21 23:59:10][aa2cf703-cc77-4be6-bd85-d2e95fb9020a] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$youtube must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-
-Horizon started successfully.
-
-
-
-
-Horizon started successfully.
-
-
-
-[2021-09-22 00:07:44][65035a3e-0291-4da5-b53f-32ceebe04c63] Processing: App\Jobs\DownloadAndStoreAudioFileJob
-
-[2021-09-22 00:07:47][65035a3e-0291-4da5-b53f-32ceebe04c63] Processed:  App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-22 00:07:50][9dc49332-4cf6-4384-86e0-d025ee280177] Processing: App\Jobs\CleanPodcastAudioJob
-[2021-09-22 00:07:50][9dc49332-4cf6-4384-86e0-d025ee280177] Processed:  App\Jobs\CleanPodcastAudioJob
-[2021-09-22 00:07:50][49a71d6e-ff9d-447c-bb1f-89a6767e5315] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-sox WARN dither: dither clipped 18 samples; decrease volume?
-
-[2021-09-22 00:07:58][49a71d6e-ff9d-447c-bb1f-89a6767e5315] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-22 00:07:59][cf308605-e428-4a17-a68c-3e48ed5345d3] Processing: App\Jobs\CreateBrandedLinkJob
-
-[2021-09-22 00:08:00][cf308605-e428-4a17-a68c-3e48ed5345d3] Processed:  App\Jobs\CreateBrandedLinkJob
-[2021-09-22 00:08:00][486c1730-c030-4c9c-b4db-ce9bdd6cb6f0] Processing: App\Jobs\GenerateCoverImageJob
-[2021-09-22 00:08:03][486c1730-c030-4c9c-b4db-ce9bdd6cb6f0] Processed:  App\Jobs\GenerateCoverImageJob
-[2021-09-22 00:08:05][82da2177-9036-4bbb-8d8f-6e6c00cbdac2] Processing: App\Jobs\CreatePodcastVideoJob
-ffmpeg version 4.3.2-0+deb11u1ubuntu1 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 10 (Ubuntu 10.2.1-20ubuntu1)
-  configuration: --prefix=/usr --extra-version=0+deb11u1ubuntu1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 51.100 / 56. 51.100
-  libavcodec     58. 91.100 / 58. 91.100
-  libavformat    58. 45.100 / 58. 45.100
-  libavdevice    58. 10.100 / 58. 10.100
-  libavfilter     7. 85.100 /  7. 85.100
-  libavresample   4.  0.  0 /  4.  0.  0
-  libswscale      5.  7.100 /  5.  7.100
-  libswresample   3.  7.100 /  3.  7.100
-  libpostproc    55.  7.100 / 55.  7.100
-[mp3 @ 0x559779aac640] Estimating duration from bitrate, this may be inaccurate
-Input #0, mp3, from '/var/www/html/storage/app/podcasts/1/clean.mp3':
-  Duration: 00:00:10.08, start: 0.000000, bitrate: 64 kb/s
-    Stream #0:0: Audio: mp3, 44100 Hz, mono, fltp, 64 kb/s
-Input #1, png_pipe, from '/var/www/html/storage/app/podcasts/1/cover-image.png':
-  Duration: N/A, bitrate: N/A
-    Stream #1:0: Video: png, rgba(pc), 1920x1080, 1 fps, 1 tbr, 1 tbn, 1 tbc
-Stream mapping:
-  Stream #1:0 -> #0:0 (png (native) -> h264 (libx264))
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x559779acf600] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[libx264 @ 0x559779acf600] profile High 4:4:4 Predictive, level 5.1, 4:4:4, 8-bit
-[libx264 @ 0x559779acf600] 264 - core 160 r3011 cde9a93 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=9 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=0 chroma_qp_offset=0 threads=12 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc=cqp mbtree=0 qp=0
-Output #0, matroska, to '/var/www/html/storage/app/podcasts/1/video.mkv':
-  Metadata:
-    encoder         : Lavf58.45.100
-    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuv444p, 1920x1080, q=-1--1, 1 fps, 1k tbn, 1 tbc
-    Metadata:
-      encoder         : Lavc58.91.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 44100 Hz, mono, fltp, 64 kb/s
-frame=   20 fps=0.0 q=0.0 size=     116kB time=00:00:06.00 bitrate= 158.3kbits/s speed=11.8x    
-[2021-09-22 00:08:06][82da2177-9036-4bbb-8d8f-6e6c00cbdac2] Processed:  App\Jobs\CreatePodcastVideoJob
-[2021-09-22 00:08:06][1a109f43-a6b5-4688-a7ae-56257c2940a7] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:08:06][1a109f43-a6b5-4688-a7ae-56257c2940a7] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-frame=   25 fps=0.0 q=0.0 Lsize=     157kB time=00:00:11.00 bitrate= 117.2kbits/s speed=11.7x    
-video:75kB audio:79kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.274962%
-[libx264 @ 0x559779acf600] frame I:1     Avg QP: 0.00  size: 75589
-[libx264 @ 0x559779acf600] frame P:24    Avg QP: 0.00  size:    79
-[libx264 @ 0x559779acf600] mb I  I16..4: 81.2%  6.0% 12.8%
-[libx264 @ 0x559779acf600] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x559779acf600] 8x8 transform intra:6.0%
-[libx264 @ 0x559779acf600] coded y,u,v intra: 10.0% 9.7% 9.6% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x559779acf600] i16 v,h,dc,p: 90%  4%  5%  0%
-[libx264 @ 0x559779acf600] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7%  0% 93%  0%  0%  0%  0%  0%  0%
-[libx264 @ 0x559779acf600] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 49% 25% 17%  3%  2%  1%  1%  1%  1%
-[libx264 @ 0x559779acf600] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x559779acf600] kb/s:24.80
-[2021-09-22 00:09:59][6a70167d-d7b5-4bf6-ae85-2278f75f2e47] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-22 00:10:02][6a70167d-d7b5-4bf6-ae85-2278f75f2e47] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-Horizon started successfully.
-
-
-
-
-[2021-09-22 00:14:50][88225f71-d289-4722-b19a-6a1b4ba69f13] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:14:51][88225f71-d289-4722-b19a-6a1b4ba69f13] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-22 00:15:47][c6f35700-0e18-4a9e-9e5d-6fd6bf7032e3] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:15:47][c6f35700-0e18-4a9e-9e5d-6fd6bf7032e3] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:16:26][073f3aa7-4143-44e0-a1b6-356d18ed5917] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:16:26][073f3aa7-4143-44e0-a1b6-356d18ed5917] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-22 00:19:06][8335be11-903f-40c0-80ce-97f70a4dc5cc] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:19:06][8335be11-903f-40c0-80ce-97f70a4dc5cc] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-
-Horizon started successfully.
-
-
-
-[2021-09-22 00:20:08][8dd63c15-36ef-4e8c-b97d-16a0b2c13778] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:20:09][8dd63c15-36ef-4e8c-b97d-16a0b2c13778] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-[2021-09-22 00:20:38][5f2b0ae0-c96b-4e97-b1bb-8bb53ff1d839] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:20:38][5f2b0ae0-c96b-4e97-b1bb-8bb53ff1d839] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-
-Horizon started successfully.
-
-
-
-
-[2021-09-22 00:21:36][c5033efd-ae80-4768-838d-6460693601db] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:21:36][c5033efd-ae80-4768-838d-6460693601db] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-Horizon started successfully.
-
-
-[2021-09-22 00:25:32][e71f07ab-ea82-4518-8db1-6610b3eb11e4] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:25:33][e71f07ab-ea82-4518-8db1-6610b3eb11e4] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-
-[2021-09-22 00:28:41][00bfc901-8572-406d-a3f8-8d81c8e708ea] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:28:42][00bfc901-8572-406d-a3f8-8d81c8e708ea] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-[2021-09-22 00:30:58][f58e6e8c-f46d-49e4-ac6d-7d7b50f66184] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-
-[2021-09-22 00:32:08][6c17cd15-a50a-4436-9b84-84d586637a10] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-Google\Service\YouTube\Video {#2175
-  #ageGatingType: "Google\Service\YouTube\VideoAgeGating"
-  #ageGatingDataType: ""
-  #contentDetailsType: "Google\Service\YouTube\VideoContentDetails"
-  #contentDetailsDataType: ""
-  +etag: null
-  #fileDetailsType: "Google\Service\YouTube\VideoFileDetails"
-  #fileDetailsDataType: ""
-  +id: null
-  +kind: null
-  #liveStreamingDetailsType: "Google\Service\YouTube\VideoLiveStreamingDetails"
-  #liveStreamingDetailsDataType: ""
-  #localizationsType: "Google\Service\YouTube\VideoLocalization"
-  #localizationsDataType: "map"
-  #monetizationDetailsType: "Google\Service\YouTube\VideoMonetizationDetails"
-  #monetizationDetailsDataType: ""
-  #playerType: "Google\Service\YouTube\VideoPlayer"
-  #playerDataType: ""
-  #processingDetailsType: "Google\Service\YouTube\VideoProcessingDetails"
-  #processingDetailsDataType: ""
-  #projectDetailsType: "Google\Service\YouTube\VideoProjectDetails"
-  #projectDetailsDataType: ""
-  #recordingDetailsType: "Google\Service\YouTube\VideoRecordingDetails"
-  #recordingDetailsDataType: ""
-  #snippetType: "Google\Service\YouTube\VideoSnippet"
-  #snippetDataType: ""
-  #statisticsType: "Google\Service\YouTube\VideoStatistics"
-  #statisticsDataType: ""
-  #statusType: "Google\Service\YouTube\VideoStatus"
-  #statusDataType: ""
-  #suggestionsType: "Google\Service\YouTube\VideoSuggestions"
-  #suggestionsDataType: ""
-  #topicDetailsType: "Google\Service\YouTube\VideoTopicDetails"
-  #topicDetailsDataType: ""
-  #internal_gapi_mappings: []
-  #modelData: []
-  #processed: []
-  +"snippet": Google\Service\YouTube\VideoSnippet {#2160
-    #collection_key: "tags"
-    +categoryId: null
-    +channelId: null
-    +channelTitle: null
-    +defaultAudioLanguage: null
-    +defaultLanguage: null
-    +description: "The description needs to be at least 20 characters long for this to work right!"
-    +liveBroadcastContent: null
-    #localizedType: "Google\Service\YouTube\VideoLocalization"
-    #localizedDataType: ""
-    +publishedAt: null
-    +tags: null
-    #thumbnailsType: "Google\Service\YouTube\ThumbnailDetails"
-    #thumbnailsDataType: ""
-    +title: "Something Special"
-    #internal_gapi_mappings: []
-    #modelData: []
-    #processed: []
-  }
-  +"status": Google\Service\YouTube\VideoStatus {#2171
-    +embeddable: null
-    +failureReason: null
-    +license: null
-    +madeForKids: null
-    +privacyStatus: "private"
-    +publicStatsViewable: null
-    +publishAt: null
-    +rejectionReason: null
-    +selfDeclaredMadeForKids: null
-    +uploadStatus: null
-    #internal_gapi_mappings: []
-    #modelData: []
-    #processed: []
-  }
-}
-
-[2021-09-22 00:32:24][c2db9a0d-4993-48a0-ab77-f427326eb10c] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-GuzzleHttp\Psr7\Request {#2170
-  -method: "POST"
-  -requestTarget: null
-  -uri: GuzzleHttp\Psr7\Uri {#2174
-    -scheme: "https"
-    -userInfo: ""
-    -host: "youtube.googleapis.com"
-    -port: null
-    -path: "/youtube/v3/videos"
-    -query: "part=status%2Csnippet"
-    -fragment: ""
-  }
-  -headers: array:3 [
-    "Host" => array:1 [
-      0 => "youtube.googleapis.com"
-    ]
-    "content-type" => array:1 [
-      0 => "application/json"
-    ]
-    "X-Php-Expected-Class" => array:1 [
-      0 => "Google\Service\YouTube\Video"
-    ]
-  ]
-  -headerNames: array:3 [
-    "content-type" => "content-type"
-    "host" => "Host"
-    "x-php-expected-class" => "X-Php-Expected-Class"
-  ]
-  -protocol: "1.1"
-  -stream: GuzzleHttp\Psr7\Stream {#2148
-    -stream: stream resource {@934
-      wrapper_type: "PHP"
-      stream_type: "TEMP"
-      mode: "w+b"
-      unread_bytes: 0
-      seekable: true
-      uri: "php://temp"
-      options: []
-    }
-    -size: null
-    -seekable: true
-    -readable: true
-    -writable: true
-    -uri: "php://temp"
-    -customMetadata: []
-  }
-}
-
-[2021-09-22 00:32:30][f58e6e8c-f46d-49e4-ac6d-7d7b50f66184] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:32:30][f58e6e8c-f46d-49e4-ac6d-7d7b50f66184] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-[2021-09-22 00:33:40][6c17cd15-a50a-4436-9b84-84d586637a10] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:33:40][6c17cd15-a50a-4436-9b84-84d586637a10] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-[2021-09-22 00:33:56][c2db9a0d-4993-48a0-ab77-f427326eb10c] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 00:33:56][c2db9a0d-4993-48a0-ab77-f427326eb10c] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-[2021-09-22 01:44:45][60458b89-e46f-46c3-ae7f-dd0a2b2be24a] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 01:44:46][60458b89-e46f-46c3-ae7f-dd0a2b2be24a] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-Horizon started successfully.
-
-
-
-[2021-09-22 02:34:35][f7707c22-d52d-4fd0-be4c-3f79c372566a] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 02:34:35][f7707c22-d52d-4fd0-be4c-3f79c372566a] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-
-
-Horizon started successfully.
-
-
-
-Horizon started successfully.
-[2021-09-22 02:46:13][7c5b075d-26e1-43c2-8d03-5d668706397b] Processing: App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-22 02:46:16][7c5b075d-26e1-43c2-8d03-5d668706397b] Processed:  App\Jobs\DownloadAndStoreAudioFileJob
-[2021-09-22 02:46:16][ad61053f-aee8-495a-ac13-b960688d9551] Processing: App\Jobs\CleanPodcastAudioJob
-[2021-09-22 02:46:16][ad61053f-aee8-495a-ac13-b960688d9551] Processed:  App\Jobs\CleanPodcastAudioJob
-[2021-09-22 02:46:16][1ee692da-44d8-411a-af64-5dcdd1f9fe0d] Processing: App\Jobs\PublishEpisodeToPodcastPlatformJob
-sox WARN dither: dither clipped 16 samples; decrease volume?
-[2021-09-22 02:46:23][1ee692da-44d8-411a-af64-5dcdd1f9fe0d] Processed:  App\Jobs\PublishEpisodeToPodcastPlatformJob
-[2021-09-22 02:46:23][f12c8fa5-9817-4bcc-a817-6549e3ba374d] Processing: App\Jobs\CreateBrandedLinkJob
-[2021-09-22 02:46:24][f12c8fa5-9817-4bcc-a817-6549e3ba374d] Processed:  App\Jobs\CreateBrandedLinkJob
-[2021-09-22 02:46:24][b10ace10-54ee-46b8-ba56-6b2e488d0345] Processing: App\Jobs\GenerateCoverImageJob
-[2021-09-22 02:46:26][b10ace10-54ee-46b8-ba56-6b2e488d0345] Processed:  App\Jobs\GenerateCoverImageJob
-[2021-09-22 02:46:26][0d373640-1162-4764-8bd2-cd3d81e403e1] Processing: App\Jobs\CreatePodcastVideoJob
-ffmpeg version 4.3.2-0+deb11u1ubuntu1 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 10 (Ubuntu 10.2.1-20ubuntu1)
-  configuration: --prefix=/usr --extra-version=0+deb11u1ubuntu1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-avresample --disable-filter=resample --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librsvg --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-nvenc --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 51.100 / 56. 51.100
-  libavcodec     58. 91.100 / 58. 91.100
-  libavformat    58. 45.100 / 58. 45.100
-  libavdevice    58. 10.100 / 58. 10.100
-  libavfilter     7. 85.100 /  7. 85.100
-  libavresample   4.  0.  0 /  4.  0.  0
-  libswscale      5.  7.100 /  5.  7.100
-  libswresample   3.  7.100 /  3.  7.100
-  libpostproc    55.  7.100 / 55.  7.100
-[mp3 @ 0x555cadf2c640] Estimating duration from bitrate, this may be inaccurate
-Input #0, mp3, from '/var/www/html/storage/app/podcasts/1/clean.mp3':
-  Duration: 00:00:10.08, start: 0.000000, bitrate: 64 kb/s
-    Stream #0:0: Audio: mp3, 44100 Hz, mono, fltp, 64 kb/s
-Input #1, png_pipe, from '/var/www/html/storage/app/podcasts/1/cover-image.png':
-  Duration: N/A, bitrate: N/A
-    Stream #1:0: Video: png, rgba(pc), 1920x1080, 1 fps, 1 tbr, 1 tbn, 1 tbc
-Stream mapping:
-  Stream #1:0 -> #0:0 (png (native) -> h264 (libx264))
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-[libx264 @ 0x555cadf4f600] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[libx264 @ 0x555cadf4f600] profile High 4:4:4 Predictive, level 5.1, 4:4:4, 8-bit
-[libx264 @ 0x555cadf4f600] 264 - core 160 r3011 cde9a93 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=1 ref=16 deblock=1:0:0 analyse=0x3:0x133 me=umh subme=9 psy=0 mixed_ref=1 me_range=24 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=0 chroma_qp_offset=0 threads=12 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=2 keyint=250 keyint_min=1 scenecut=40 intra_refresh=0 rc=cqp mbtree=0 qp=0
-Output #0, matroska, to '/var/www/html/storage/app/podcasts/1/video.mkv':
-  Metadata:
-    encoder         : Lavf58.45.100
-    Stream #0:0: Video: h264 (libx264) (H264 / 0x34363248), yuv444p, 1920x1080, q=-1--1, 1 fps, 1k tbn, 1 tbc
-    Metadata:
-      encoder         : Lavc58.91.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-    Stream #0:1: Audio: mp3 (U[0][0][0] / 0x0055), 44100 Hz, mono, fltp, 64 kb/s
-frame=   19 fps=0.0 q=0.0 size=       1kB time=00:00:05.00 bitrate=   1.2kbits/s speed=9.99x    [2021-09-22 02:46:27][0d373640-1162-4764-8bd2-cd3d81e403e1] Processed:  App\Jobs\CreatePodcastVideoJob
-[2021-09-22 02:46:27][79a0e8a0-3774-43d9-bfd7-1155667b1733] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-frame=   25 fps=0.0 q=0.0 Lsize=     157kB time=00:00:11.00 bitrate= 117.2kbits/s speed=11.6x    
-video:75kB audio:79kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.274962%
-[libx264 @ 0x555cadf4f600] frame I:1     Avg QP: 0.00  size: 75589
-[libx264 @ 0x555cadf4f600] frame P:24    Avg QP: 0.00  size:    79
-[libx264 @ 0x555cadf4f600] mb I  I16..4: 81.2%  6.0% 12.8%
-[libx264 @ 0x555cadf4f600] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x555cadf4f600] 8x8 transform intra:6.0%
-[libx264 @ 0x555cadf4f600] coded y,u,v intra: 10.0% 9.7% 9.6% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x555cadf4f600] i16 v,h,dc,p: 90%  4%  5%  0%
-[libx264 @ 0x555cadf4f600] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  7%  0% 93%  0%  0%  0%  0%  0%  0%
-[libx264 @ 0x555cadf4f600] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 49% 25% 17%  3%  2%  1%  1%  1%  1%
-[libx264 @ 0x555cadf4f600] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x555cadf4f600] kb/s:24.80
-[2021-09-22 02:46:32][79a0e8a0-3774-43d9-bfd7-1155667b1733] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 02:56:30][7d7cbf38-436a-4bd1-a7d8-57d22315cf91] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 02:56:31][7d7cbf38-436a-4bd1-a7d8-57d22315cf91] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 03:02:22][34d58b0f-6109-40c9-855c-37c14df8debd] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-"2021-10-10T15:59:00+00:00"
-[2021-09-22 03:03:29][61e87593-da1f-448e-a8ea-6070fff28294] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 03:03:30][61e87593-da1f-448e-a8ea-6070fff28294] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 03:03:52][34d58b0f-6109-40c9-855c-37c14df8debd] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 03:03:52][34d58b0f-6109-40c9-855c-37c14df8debd] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 03:05:49][0cc25e83-36e6-4b4b-8a26-f3a7818ddeac] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 03:05:55][0cc25e83-36e6-4b4b-8a26-f3a7818ddeac] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:38:34][cdc61dab-9947-41f3-9b0a-e173cf0be6ac] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:38:35][cdc61dab-9947-41f3-9b0a-e173cf0be6ac] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-Horizon started successfully.
-[2021-09-22 04:39:38][50d511fa-40c3-4f82-9f39-60d1fd1a868f] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:39:38][50d511fa-40c3-4f82-9f39-60d1fd1a868f] Failed:     App\Jobs\PublishEpisodeToVideoPlatformJob
-
-   Error 
-
-  Typed property App\Jobs\PublishEpisodeToVideoPlatformJob::$podcastEpisode must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 04:40:57][6fbf9333-0bcc-48a4-a136-fb5deb8151a2] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:41:01][6fbf9333-0bcc-48a4-a136-fb5deb8151a2] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:43:33][22ef7d8c-fdf3-4fd8-b8b6-736222385f2f] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:43:35][22ef7d8c-fdf3-4fd8-b8b6-736222385f2f] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:44:32][2d6f8697-d41f-45de-b8dd-95fbade801af] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:44:36][2d6f8697-d41f-45de-b8dd-95fbade801af] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-Horizon started successfully.
-[2021-09-22 04:45:00][3f9b6acd-1a18-46eb-b29f-d1c61cda0a19] Processing: App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 04:45:02][3f9b6acd-1a18-46eb-b29f-d1c61cda0a19] Processed:  App\Jobs\PublishEpisodeToVideoPlatformJob
-[2021-09-22 11:44:55][456d238a-9a23-4c2e-ad69-f4b5b0c4d66e] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:44:55][456d238a-9a23-4c2e-ad69-f4b5b0c4d66e] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:46:22][e567eb08-b06f-423d-b5cd-37a6dadf4bd8] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:46:22][e567eb08-b06f-423d-b5cd-37a6dadf4bd8] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:46:29][0476d728-da16-4470-a93b-9140a908bc0b] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:46:29][0476d728-da16-4470-a93b-9140a908bc0b] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:46:40][0904f7e7-be3d-4e4b-b9a6-7d7334ef05bd] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:46:40][0904f7e7-be3d-4e4b-b9a6-7d7334ef05bd] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:47:25][4179a31d-2dd2-4059-9dd8-0b8040f82bb9] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:47:25][4179a31d-2dd2-4059-9dd8-0b8040f82bb9] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:47:49][c7de07ec-d216-4dcf-9390-aa8f75dbdd58] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:47:49][c7de07ec-d216-4dcf-9390-aa8f75dbdd58] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:48:14][98d735b1-b026-432f-b877-bde5aabb69dd] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:48:14][98d735b1-b026-432f-b877-bde5aabb69dd] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:48:25][56ac4c88-f41e-4688-8578-4d864f80cd87] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:48:25][56ac4c88-f41e-4688-8578-4d864f80cd87] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:48:49][3f140d3b-11d7-434e-9368-66d4d26a2fe8] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:48:49][3f140d3b-11d7-434e-9368-66d4d26a2fe8] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:49:05][cfeeee77-f886-4412-ae85-f965007d6220] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:49:05][cfeeee77-f886-4412-ae85-f965007d6220] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:49:13][63300f79-083b-4085-bdc5-61e206ee40f7] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:49:13][63300f79-083b-4085-bdc5-61e206ee40f7] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:49:29][056fa0ed-b5fe-410d-bc6f-df78dd8d18ad] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:49:29][056fa0ed-b5fe-410d-bc6f-df78dd8d18ad] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:49:38][27cb3f53-0246-466b-8961-63742283ae75] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:49:38][27cb3f53-0246-466b-8961-63742283ae75] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:50:00][641bc36f-7ada-4a93-b7f4-b51c4cda2ad3] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:50:00][641bc36f-7ada-4a93-b7f4-b51c4cda2ad3] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:50:14][da850822-e1ad-409b-99f5-e058e4ca6af5] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:50:14][da850822-e1ad-409b-99f5-e058e4ca6af5] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:50:29][13487b5b-57a8-4a8d-90f0-c1b770a82f47] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:50:29][13487b5b-57a8-4a8d-90f0-c1b770a82f47] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:50:36][821802dd-1406-4b1d-88be-d04660e7627a] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:50:36][821802dd-1406-4b1d-88be-d04660e7627a] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:50:44][6c65a3b1-f03e-4f5d-9f96-14c58641e12a] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:50:44][6c65a3b1-f03e-4f5d-9f96-14c58641e12a] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:50:53][c333420c-5944-46bd-b2d9-f0c91798dc81] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:50:53][c333420c-5944-46bd-b2d9-f0c91798dc81] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:51:02][adc429fe-f944-4523-95a6-8853eea86832] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:51:02][adc429fe-f944-4523-95a6-8853eea86832] Failed:     App\Jobs\SchedulePodcastsSocialPostsJob
-
-   Error 
-
-  Typed property App\Jobs\SchedulePodcastsSocialPostsJob::$campaignTemplate must not be accessed before initialization
-
-  at vendor/facade/ignition/src/JobRecorder/JobRecorder.php:92
-     88▕             })
-     89▕             ->mapWithKeys(function (ReflectionProperty $property) use ($job) {
-     90▕                 $property->setAccessible(true);
-     91▕ 
-  ➜  92▕                 return [$property->name => $property->getValue($job)];
-     93▕             })
-     94▕             ->toArray();
-     95▕     }
-     96▕
-
-      [2m+55 vendor frames [22m
-  56  artisan:37
-      Illuminate\Foundation\Console\Kernel::handle()
-[2021-09-22 11:51:14][fce3faca-44dd-4f16-a9b9-32d81d441598] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
-[2021-09-22 11:51:14][fce3faca-44dd-4f16-a9b9-32d81d441598] Processed:  App\Jobs\SchedulePodcastsSocialPostsJob

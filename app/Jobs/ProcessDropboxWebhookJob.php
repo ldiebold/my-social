@@ -2,18 +2,26 @@
 
 namespace App\Jobs;
 
+use App;
 use Storage;
 use App\Models\ExternalPodcastFolder;
 use App\Models\PublishPodcastOrchestrator;
+use App\Services\Transistor\Transistor;
+use Bus;
 use Spatie\WebhookClient\Jobs\ProcessWebhookJob as SpatieProcessWebhookJob;
 use \Illuminate\Contracts\Filesystem\Filesystem;
 
 class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
 {
     public Filesystem $dropboxDisk;
+    public int $latestEpisodeNumber;
+    public Transistor $transistor;
 
     public function handle()
     {
+        $this->transistor = App::make(Transistor::class);
+        $this->latestEpisode = $this->transistor->latestEpisodeNumber(env('PODCAST_SHOW_ID'));
+
         $this->dropboxDisk = Storage::disk('dropbox');
 
         $directories = collect(
@@ -27,12 +35,17 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
                 return ['path' => $item];
             });
 
-        $newDirectories->each(function ($podcastFolder) {
+        $publishPodcastJobChains = $newDirectories->each(function ($podcastFolder) {
+            if (intval($podcastFolder) <= $this->latestEpisode) {
+                return;
+            };
             $externalPodcastFolder =  ExternalPodcastFolder::create($podcastFolder);
             $podcastOrchestrator = PublishPodcastOrchestrator::create([
                 'external_podcast_id' => $externalPodcastFolder->id
             ]);
-            $podcastOrchestrator->publishPodcast();
+            return $podcastOrchestrator->publishPodcast();
         });
+
+        Bus::chain($publishPodcastJobChains);
     }
 }

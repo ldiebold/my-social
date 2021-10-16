@@ -11,13 +11,26 @@ class RedditController extends Controller
 {
     public function auth(Reddit $reddit)
     {
-        return redirect($reddit->getAuthorizeUrl());
+        $scope = [
+            'submit',
+            'save',
+            'read',
+            'mysubreddits',
+            'modposts',
+            'edit',
+            'identity',
+            'structuredstyles'
+        ];
+
+        return redirect($reddit->getAuthorizeUrl($scope));
     }
 
     public function callback(Request $request, Reddit $reddit)
     {
         $token = $reddit->retrieveAccessToken($request->code)
             ->collect();
+
+        RedditAccessToken::query()->delete();
 
         RedditAccessToken::create([
             'access_token' => $token['access_token'],
