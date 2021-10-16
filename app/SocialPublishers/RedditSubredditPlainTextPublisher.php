@@ -10,7 +10,7 @@ use App\Contracts\SocialPlatform\PublishesWithTitle;
 use App\Services\Reddit\Reddit;
 use Illuminate\Support\Collection;
 
-class RedditSubredditPublisher implements PublishesPlainText, PublishesWithTitle, PublishesWithBody
+class RedditSubredditPlainTextPublisher implements PublishesPlainText, PublishesWithTitle, PublishesWithBody
 {
     public string $title;
     public string $body;
