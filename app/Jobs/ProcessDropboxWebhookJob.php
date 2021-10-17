@@ -54,6 +54,6 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
             return $podcastOrchestrator->makePublishPodcastJobChain();
         });
 
-        Bus::chain($publishPodcastJobChains);
+        Bus::chain($publishPodcastJobChains)->dispatch();
     }
 }
