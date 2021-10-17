@@ -217,7 +217,7 @@ class DownloadAndStoreAudioFileJob implements ShouldQueue
         return Validator::make($info, [
             'title' => 'required',
             'description' => 'required|min:20',
-            'social_post_text' => 'required|min:10|max:140',
+            'social_post_text' => 'required|min:10|max:210',
         ]);
     }
 
