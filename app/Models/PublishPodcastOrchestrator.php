@@ -64,13 +64,6 @@ class PublishPodcastOrchestrator extends Model
      */
     public function publishPodcast()
     {
-        $jobs = $this->incomplete_jobs->map(fn ($value, $job) => (new $job($this)));
-        if ($jobs->isEmpty()) {
-            return false;
-        }
-
-        $bus = Bus::chain($jobs);
-
         return $this->makePublishPodcastJob()->dispatch();
     }
 

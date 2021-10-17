@@ -51,9 +51,7 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
             $podcastOrchestrator = PublishPodcastOrchestrator::create([
                 'external_podcast_folder_id' => $externalPodcastFolder->id
             ]);
-            return $podcastOrchestrator->makePublishPodcastJobChain();
+            return $podcastOrchestrator->publishPodcast();
         });
-
-        Bus::chain($publishPodcastJobChains)->dispatch();
     }
 }
