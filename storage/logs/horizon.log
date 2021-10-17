@@ -213,3 +213,4 @@ Horizon started successfully.
       Illuminate\Foundation\Console\Kernel::handle()
 [2021-10-16 01:44:18][921a89d4-5032-487c-b5b7-a37efda8ec43] Processing: App\Jobs\SchedulePodcastsSocialPostsJob
 [2021-10-16 01:44:18][921a89d4-5032-487c-b5b7-a37efda8ec43] Processed:  App\Jobs\SchedulePodcastsSocialPostsJob
+Horizon started successfully.
