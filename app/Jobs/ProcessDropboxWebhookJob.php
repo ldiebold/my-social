@@ -45,7 +45,9 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
             if (intval($podcastFolderNumber) <= $this->latestEpisode) {
                 return;
             };
-            $externalPodcastFolder =  ExternalPodcastFolder::create($podcastFolder);
+            $externalPodcastFolder =  ExternalPodcastFolder::create([
+                'path' => $podcastFolder
+            ]);
             $podcastOrchestrator = PublishPodcastOrchestrator::create([
                 'external_podcast_id' => $externalPodcastFolder->id
             ]);
