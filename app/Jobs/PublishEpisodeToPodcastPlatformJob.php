@@ -89,8 +89,9 @@ class PublishEpisodeToPodcastPlatformJob implements ShouldQueue
             ->getLatestKnownEpisodeDate(env('PODCAST_SHOW_ID'));
 
         if ($latestKnownPublishDate->isPast()) {
-            return $this->publishDate = Carbon::now()
+            $this->publishDate = Carbon::now()
                 ->addDays(1);
+            return $this;
         } else {
             $this->publishDate = $latestKnownPublishDate
                 ->addDays(env('DAYS_BETWEEN_EPISODES'));
