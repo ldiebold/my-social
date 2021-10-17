@@ -49,7 +49,7 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
                 'path' => $podcastFolder
             ]);
             $podcastOrchestrator = PublishPodcastOrchestrator::create([
-                'external_podcast_id' => $externalPodcastFolder->id
+                'external_podcast_folder_id' => $externalPodcastFolder->id
             ]);
             return $podcastOrchestrator->makePublishPodcastJobChain();
         });
