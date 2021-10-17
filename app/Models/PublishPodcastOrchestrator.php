@@ -64,7 +64,7 @@ class PublishPodcastOrchestrator extends Model
      */
     public function publishPodcast()
     {
-        return $this->makePublishPodcastJob()->dispatch();
+        return $this->makePublishPodcastJobChain()->dispatch();
     }
 
     /**
