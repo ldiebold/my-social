@@ -34,7 +34,6 @@ RUN apt-get update \
     && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list \
     && apt-get update \
-    && apt-get install -y sox libsox-fmt-mp3 \
     && apt-get install -y yarn \
     && apt-get install -y mysql-client \
     && apt-get install -y postgresql-client
@@ -46,8 +45,8 @@ RUN apt-get install -y nodejs gconf-service libasound2 libatk1.0-0 libc6 libcair
 # FFMpeg
 RUN apt-get install -y ffmpeg;
 
-# Sox Support MP3
-RUN apt-get install -y libsox-fmt-all;
+# Sox
+RUN apt-get install -y sox libsox-fmt-mp3 libsox-fmt-all;
 
 RUN apt-get -y autoremove \
     && apt-get clean \
