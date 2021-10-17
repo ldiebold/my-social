@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 // Caddy (for ssl in dev mode)
 Route::get('/caddy-check', [CaddyController::class, 'check']);
 
+Route::get('/templates/cover-image', [CoverImageController::class, 'standard']);
+
 Route::middleware('oauth.enabled')->group(function () {
   // Youtube
   Route::group(['prefix' => 'youtube'], function () {
