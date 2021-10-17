@@ -34,7 +34,7 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
 
         $newDirectories = $directories->diff($allFolders)
             ->map(function ($item) {
-                return ['path' => $item];
+                return $item;
             });
 
         Log::info($newDirectories);
