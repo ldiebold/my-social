@@ -63,7 +63,7 @@ class DownloadAndStoreAudioFileJob implements ShouldQueue
         $this->infoFilePath = $this->podcastFolder->path . '/info.json';
         $this->errorsFilePath = $this->podcastFolder->path . '/errors.txt';
 
-        $this->podcastEpisodeNumber = Str::of('podcasts/1')->explode('/')->last();
+        $this->podcastEpisodeNumber = Str::of($this->podcastFolderPath)->explode('/')->last();
 
         $this->rawAudioFileName = $this->podcastEpisodeNumber . '/raw.wav';
         $this->noiseAudioFileName = $this->podcastEpisodeNumber . '/noise.wav';
