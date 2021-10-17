@@ -43,8 +43,8 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
             $podcastFolderNumber = Str::replace('podcasts/', '', $podcastFolder);
             Log::info($podcastFolderNumber);
             if (
-                (intval($podcastFolderNumber) <= $this->latestEpisode) &&
-                $this->dropboxDisk->exists($podcastFolder . '/publish')
+                (intval($podcastFolderNumber) <= $this->latestEpisode) ||
+                !$this->dropboxDisk->exists($podcastFolder . '/publish')
             ) {
                 return;
             };
