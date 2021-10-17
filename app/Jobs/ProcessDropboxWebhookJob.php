@@ -42,7 +42,10 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
         $publishPodcastJobChains = $newDirectories->each(function ($podcastFolder) {
             $podcastFolderNumber = Str::replace('podcasts/', '', $podcastFolder);
             Log::info($podcastFolderNumber);
-            if (intval($podcastFolderNumber) <= $this->latestEpisode) {
+            if (
+                (intval($podcastFolderNumber) <= $this->latestEpisode) &&
+                $this->dropboxDisk->exists($podcastFolder . '/publish')
+            ) {
                 return;
             };
             $externalPodcastFolder =  ExternalPodcastFolder::create([
