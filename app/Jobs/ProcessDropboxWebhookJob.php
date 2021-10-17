@@ -10,6 +10,7 @@ use App\Services\Transistor\Transistor;
 use Bus;
 use Spatie\WebhookClient\Jobs\ProcessWebhookJob as SpatieProcessWebhookJob;
 use \Illuminate\Contracts\Filesystem\Filesystem;
+use Log;
 use Str;
 
 class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
@@ -36,8 +37,11 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
                 return ['path' => $item];
             });
 
+        Log::info($newDirectories);
+
         $publishPodcastJobChains = $newDirectories->each(function ($podcastFolder) {
             $podcastFolderNumber = Str::replace('podcasts/', '', $podcastFolder);
+            Log::info($podcastFolderNumber);
             if (intval($podcastFolderNumber) <= $this->latestEpisode) {
                 return;
             };
@@ -45,7 +49,7 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
             $podcastOrchestrator = PublishPodcastOrchestrator::create([
                 'external_podcast_id' => $externalPodcastFolder->id
             ]);
-            return $podcastOrchestrator->publishPodcast();
+            return $podcastOrchestrator->makePublishPodcastJobChain();
         });
 
         Bus::chain($publishPodcastJobChains);
