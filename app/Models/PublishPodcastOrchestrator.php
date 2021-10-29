@@ -31,7 +31,7 @@ class PublishPodcastOrchestrator extends Model
         CreateBrandedLinkJob::class => 'has_branded_link',
         GenerateCoverImageJob::class => 'has_cover_image',
         CreatePodcastVideoJob::class => 'has_podcast_video',
-        PublishEpisodeToVideoPlatformJob::class => 'published_on_video_platform',
+        // PublishEpisodeToVideoPlatformJob::class => 'published_on_video_platform',
         SchedulePodcastsSocialPostsJob::class => 'social_posts_scheduled',
     ];
 
