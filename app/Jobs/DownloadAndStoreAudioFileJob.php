@@ -174,6 +174,8 @@ class DownloadAndStoreAudioFileJob implements ShouldQueue
             return false;
         }
 
+        \Log::info($this->infoFilePath);
+
         $infoFile = $this->dropboxDisk->get($this->infoFilePath);
         $this->info = json_decode($infoFile, true);
 
