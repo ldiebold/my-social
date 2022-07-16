@@ -30,14 +30,18 @@ class ProcessDropboxWebhookJob extends SpatieProcessWebhookJob
             $this->dropboxDisk->directories(env('PODCASTS_DIRECTORY'))
         );
 
+        Log::info("directories inside " . env('PODCASTS_DIRECTORY'));
+        Log::info(json_encode($this->dropboxDisk->directories(env('PODCASTS_DIRECTORY'))));
+
         $allFolders = ExternalPodcastFolder::all()->pluck('path');
+        Log::info("external path folders " . json_encode($allFolders));
 
         $newDirectories = $directories->diff($allFolders)
             ->map(function ($item) {
                 return $item;
             });
 
-        Log::info($newDirectories);
+        Log::info("new directories: $newDirectories");
 
         $publishPodcastJobChains = $newDirectories->each(function ($podcastFolder) {
             $podcastFolderNumber = Str::replace('podcasts/', '', $podcastFolder);
